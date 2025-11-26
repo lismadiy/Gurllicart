@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gurllicart — Gift that speaks the language of love</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png?v=2">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR (centered two-line style) -->
+<nav class="custom-navbar">
+  <div class="brand-box">
+    <img src="assets/img/1.png" alt="Logo" class="brand-logo">
+    <span class="brand-title">gurllicart</span>
+  </div>
+</nav>
+
+
+  <!-- HERO -->
+  <section class="hero mx-auto my-4" id="home">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 hero-left">
+          <h1><span class="accent">GIFT</span> THAT SPEAK<br>THE LANGUAGE OF LOVE</h1>
+          <p class="lead">Let your heart blossom with our curated bouquets. Perfect for every occasion.</p>
+          <a href="#ourproduct" class="btn-shop">Shop now</a>
+          <div class="mt-3 notice-box">Tersedia hanya sekitar Kota Jambi 🙏</div>
+        </div>
+
+        <div class="col-md-6 text-center">
+          <img src="assets/img/2.png" alt="Hero image" class="hero-img img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST SELLERS -->
+  <section class="section text-center">
+    <div class="container">
+      <h2>Best Sellers</h2>
+      <p class="text-muted mb-4">Shop Our Best Sellers Before They're Gone!</p>
+
+      <div class="row" id="best-sellers">
+        <!-- Cards for best sellers (will be filled by JS or kept static) -->
+        <div class="col-md-3 mb-4">
+          <div class="card card-custom">
+            <img src="assets/img/3.png" class="card-img-top" style="height:260px; object-fit:cover;" alt="Bouquet Set A">
+            <div class="card-body">
+              <h5>Bouquet Set A</h5>
+              <div class="price-tag">Rp1.990</div>
+              <div class="mt-2">
+                <button class="btn btn-link p-0 lihat-btn" 
+                        data-id="1" 
+                        data-name="Bouquet Set A" 
+                        data-price="Rp1.990" 
+                        data-img="assets/img/3.png"
+                        data-contact="https://wa.me/6288269209778">Lihat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="card card-custom">
+            <img src="assets/img/4.png" class="card-img-top" style="height:260px; object-fit:cover;" alt="Bouquet Set B">
+            <div class="card-body">
+              <h5>Bouquet Set B</h5>
+              <div class="price-tag">Rp1.990</div>
+              <div class="mt-2">
+                <button class="btn btn-link p-0 lihat-btn" 
+                        data-id="2" 
+                        data-name="Bouquet Set B" 
+                        data-price="Rp1.990" 
+                        data-img="assets/img/4.png"
+                        data-contact="https://wa.me/6288269209778">Lihat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="card card-custom">
+            <img src="assets/img/5.png" class="card-img-top" style="height:260px; object-fit:cover;" alt="Bouquet Set C">
+            <div class="card-body">
+              <h5>Bouquet Set C</h5>
+              <div class="price-tag">Rp1.990</div>
+              <div class="mt-2">
+                <button class="btn btn-link p-0 lihat-btn" 
+                        data-id="3" 
+                        data-name="Bouquet Set C" 
+                        data-price="Rp1.990" 
+                        data-img="assets/img/5.png"
+                        data-contact="https://wa.me/6288269209778">Lihat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="card card-custom">
+            <img src="assets/img/6.png" class="card-img-top" style="height:260px; object-fit:cover;" alt="Bouquet Set D">
+            <div class="card-body">
+              <h5>Bouquet Set D</h5>
+              <div class="price-tag">Rp1.990</div>
+              <div class="mt-2">
+                <button class="btn btn-link p-0 lihat-btn" 
+                        data-id="4" 
+                        data-name="Bouquet Set D" 
+                        data-price="Rp1.990" 
+                        data-img="assets/img/6.png"
+                        data-contact="https://wa.me/6288269209778">Lihat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR PRODUCT -->
+  <section class="section text-center" id="ourproduct">
+    <div class="container">
+      <h2>Our Product</h2>
+      <p class="text-muted mb-4">Discover our complete bouquets collection.</p>
+
+      <div class="row" id="product-grid">
+        <!-- Product cards (8 items) -->
+        <!-- 1 -->
+        <div class="col-md-3 mb-4">
+          <div class="card card-custom">
+            <img src="assets/img/3.png" class="card-img-top" style="height:240px; object-fit:cover;" alt="Bouquet Set A">
+            <div class="card-body">
+              <h5>Bouquet Set A</h5>
+              <div class="price-tag">Rp1.990</div>
+              <div class="mt-2">
+                <button class="btn btn-link p-0 lihat-btn"
+                        data-id="1"
+                        data-name="Bouquet Set A"
+                        data-price="Rp1.990"
+                        data-img="assets/img/3.png"
+                        data-contact="https://wa.me/6288269209778">Lihat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-md-3 mb-4">
+          <div class="card card-custom">
+            <img src="assets/img/4.png" class="card-img-top" style="height:240px; object-fit:cover;" alt="Bouquet Set B">
+            <div class="card-body">
+              <h5>Bouquet Set B</h5>
+              <div class="price-tag">Rp1.990</div>
+              <div class="mt-2">
+                <button class="btn btn-link p-0 lihat-btn"
+                        data-id="2"
+                        data-name="Bouquet Set B"
+                        data-price="Rp1.990"
+                        data-img="assets/img/4.png"
+                        data-contact="https://wa.me/6288269209778">Lihat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-md-3 mb-4">
+          <div class="card card-custom">
+            <img src="assets/img/5.png" class="card-img-top" style="height:240px; object-fit:cover;" alt="Bouquet Set C">
+            <div class="card-body">
+              <h5>Bouquet Set C</h5>
+              <div class="price-tag">Rp1.990</div>
+              <div class="mt-2">
+                <button class="btn btn-link p-0 lihat-btn"
+                        data-id="3"
+                        data-name="Bouquet Set C"
+                        data-price="Rp1.990"
+                        data-img="assets/img/5.png"
+                        data-contact="https://wa.me/6288269209778">Lihat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-md-3 mb-4">
+          <div class="card card-custom">
+            <img src="assets/img/6.png" class="card-img-top" style="height:240px; object-fit:cover;" alt="Bouquet Set D">
+            <div class="card-body">
+              <h5>Bouquet Set D</h5>
+              <div class="price-tag">Rp1.990</div>
+              <div class="mt-2">
+                <button class="btn btn-link p-0 lihat-btn"
+                        data-id="4"
+                        data-name="Bouquet Set D"
+                        data-price="Rp1.990"
+                        data-img="assets/img/6.png"
+                        data-contact="https://wa.me/6288269209778">Lihat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-md-3 mb-4">
+          <div class="card card-custom">
+            <img src="assets/img/3.png" class="card-img-top" style="height:240px; object-fit:cover;" alt="Mini Bouquet">
+            <div class="card-body">
+              <h5>Mini Bouquet</h5>
+              <div class="price-tag">Rp890</div>
+              <div class="mt-2">
+                <button class="btn btn-link p-0 lihat-btn"
+                        data-id="5"
+                        data-name="Mini Bouquet"
+                        data-price="Rp890"
+                        data-img="assets/img/3.png"
+                        data-contact="https://wa.me/6288269209778">Lihat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="col-md-3 mb-4">
+          <div class="card card-custom">
+            <img src="assets/img/4.png" class="card-img-top" style="height:240px; object-fit:cover;" alt="Single Rose">
+            <div class="card-body">
+              <h5>Single Rose</h5>
+              <div class="price-tag">Rp150</div>
+              <div class="mt-2">
+                <button class="btn btn-link p-0 lihat-btn"
+                        data-id="6"
+                        data-name="Single Rose"
+                        data-price="Rp150"
+                        data-img="assets/img/4.png"
+                        data-contact="https://wa.me/6288269209778">Lihat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="col-md-3 mb-4">
+          <div class="card card-custom">
+            <img src="assets/img/5.png" class="card-img-top" style="height:240px; object-fit:cover;" alt="Gift Box">
+            <div class="card-body">
+              <h5>Gift Box</h5>
+              <div class="price-tag">Rp350</div>
+              <div class="mt-2">
+                <button class="btn btn-link p-0 lihat-btn"
+                        data-id="7"
+                        data-name="Gift Box"
+                        data-price="Rp350"
+                        data-img="assets/img/5.png"
+                        data-contact="https://wa.me/6288269209778">Lihat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="col-md-3 mb-4">
+          <div class="card card-custom">
+            <img src="assets/img/6.png" class="card-img-top" style="height:240px; object-fit:cover;" alt="Hand-tied">
+            <div class="card-body">
+              <h5>Hand-tied</h5>
+              <div class="price-tag">Rp2.250</div>
+              <div class="mt-2">
+                <button class="btn btn-link p-0 lihat-btn"
+                        data-id="8"
+                        data-name="Hand-tied"
+                        data-price="Rp2.250"
+                        data-img="assets/img/6.png"
+                        data-contact="https://wa.me/6288269209778">Lihat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- /row product-grid -->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-3">
+          <h5>About</h5>
+          <ul class="list-unstyled">
+            <ul class="list-unstyled">
+  <li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#aboutModal">About us</a></li>
+  <li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#reviewModal">Review</a></li>
+</ul>
+          </ul>
+        </div>
+
+<div class="col-md-3 text-center">
+  <h5>Social Media</h5>
+  <div class="mt-2 d-flex justify-content-center gap-2">
+    <a href="https://facebook.com/gurllicart" target="_blank" class="social-circle">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://youtube.com/gurllicart" target="_blank" class="social-circle">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://instagram.com/gurllicart" target="_blank" class="social-circle">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://tiktok.com/@gurllicart" target="_blank" class="social-circle">
+      <i class="fab fa-tiktok"></i>
+    </a>
+  </div>
+</div>
+
+
+
+      <hr>
+      <div class="text-center">Made with love by gurllicart 😊</div>
+    </div>
+  </footer>
+
+  <!-- PRODUCT MODAL (Bootstrap) -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="productModalLabel">Product name</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img id="modal-img" src="" alt="" style="width:100%; height:320px; object-fit:cover; border-radius:8px;">
+          <h4 id="modal-price" class="mt-3"></h4>
+          <div class="d-grid mt-3">
+            <a id="modal-wa" class="btn btn-success btn-lg" target="_blank">Pesan Sekarang</a>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT US MODAL -->
+  <div class="modal fade" id="aboutModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">About Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/4.png" alt="About" style="width:100%; border-radius:12px; margin-bottom:20px;">
+          <h4>Gurllicart</h4>
+          <p>Gurllicart adalah brand gift & bouquet Jambi yang berfokus menghadirkan hadiah yang elegan, personal, dan penuh makna. Kami menyediakan rangkaian bunga, gift box, dan paket kejutan untuk berbagai momen spesial—ulang tahun, wisuda, anniversary, dan perayaan lainnya.</p>
+          <p>Kami percaya setiap hadiah punya cerita dan setiap detail harus mewakili ketulusan yang ingin disampaikan.</p>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REVIEW MODAL -->
+  <div class="modal fade" id="reviewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Customer Review</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4>Apa kata pelanggan kami?</h4>
+          <div class="mt-3">
+            <strong>🌸 Siska — ⭐⭐⭐⭐⭐</strong>
+            <p>Bouquet-nya super cantik! Real pict dan wangi banget.</p>
+          </div>
+          <div class="mt-3">
+            <strong>🌸 Dina — ⭐⭐⭐⭐⭐</strong>
+            <p>Pengiriman cepat, hasilnya rapi dan elegan. Cocok banget buat hadiah.</p>
+          </div>
+          <div class="mt-3">
+            <strong>🌸 Rani — ⭐⭐⭐⭐⭐</strong>
+            <p>Awalnya ragu, tapi ternyata bagus banget! Pasti repeat order.</p>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Produk -->
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+
+    <span id="modal-close" class="modal-close">&times;</span>
+
+    <img id="modal-product-img" class="modal-img" src="" alt="Product Image">
+
+    <h2 id="modal-product-name" class="modal-title">Nama Produk</h2>
+    <p id="modal-product-price" class="modal-price">Rp0</p>
+
+    <a id="modal-wa-button" class="modal-wa-btn" href="#" target="_blank">Pesan Sekarang</a>
+
+  </div>
+</div>
+
+
+  <!-- Bootstrap JS (CDN) and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Your JS -->
+  <script src="app.js"></script>
+</body>
+</html>
