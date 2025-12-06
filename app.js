@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById('modal-product-img').src = img;
 
       // WhatsApp link (one universal number)
-      const waNumber = '6288269209778'; // ganti sesuai kebutuhan
+      const waNumber = '6288268000599'; // ganti sesuai kebutuhan
       const message = encodeURIComponent(`Halo! Saya ingin memesan ${name}`);
       const waLink = `https://wa.me/${waNumber}?text=${message}`;
 
