@@ -1,152 +1,198 @@
 /* ===================== GLOBAL ===================== */
 body {
-    background: #ffffff;
-    font-family: 'Helvetica Neue', sans-serif;
+  background: #ffffff;
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
 }
 
-.brand-title, h2, h3, h4 {
-  font-family: 'Dancing Script', cursive !important;
+h2, h3, h4,
+.brand-title {
+  font-family: 'Dancing Script', cursive;
 }
 
-.navbar {
-    background: transparent;
-    border: none;
+a {
+  text-decoration: none;
+}
+
+/* ===================== NAVBAR ===================== */
+.custom-navbar {
+  width: 100%;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.brand-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  height: 62px;
 }
 
 .brand-title {
-    font-size: 32px;
-    color: #ff6f83;
-    font-family: 'Eyesome Script', cursive;
-    font-weight: 700;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ff6f83;
+  text-transform: lowercase;
 }
-
-.nav-link {
-    color: #3b3b3b;
-    font-weight: 600;
-}
-
 
 /* ===================== HERO SECTION ===================== */
 .hero {
-    background: #ffe5d9;
-    padding: 40px 0;
-    border-radius: 24px;
-    margin: 0 auto;
-    width: 95%;
+  background: #ffe5d9;
+  padding: 40px 0;
+  border-radius: 24px;
+  margin: 0 auto 24px;
+  width: 95%;
+  text-align: center;
 }
 
 .hero-left h1 {
-    font-size: 48px;
-    line-height: 1.05;
-    margin-bottom: 15px;
-    color: #222;
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 15px;
+  color: #222;
 }
 
 .accent {
-    color: #ff6f83;
+  color: #ff6f83;
 }
 
 .hero-left p.lead {
-    color: #666;
-    font-size: 16px;
-}
-
-.btn-shop {
-    background: transparent;
-    border: 2px solid #ffcad4;
-    color: #c65f6f;
-    padding: 10px 24px;
-    border-radius: 20px;
-    text-decoration: none;
-    display: inline-block;
+  font-size: 16px;
+  color: #666;
 }
 
 .hero-img {
-    max-width: 360px;
-    width: 100%;
-    border-radius: 10px;
+  max-width: 360px;
+  width: 100%;
+  border-radius: 12px;
 }
 
-/* ===================== SECTIONS ===================== */
+.btn-shop {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 24px;
+  border-radius: 20px;
+  border: 2px solid #ffcad4;
+  background: transparent;
+  color: #c65f6f;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-shop:hover {
+  background: #ffcad4;
+  color: #fff;
+}
+
+/* ===================== NOTICE ===================== */
+.notice-box {
+  background: #ffffff;
+  border: 1px solid #ffd6dd;
+  padding: 12px 18px;
+  margin-top: 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  color: #c65f6f;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  display: inline-block;
+}
+
+/* ===================== SECTIONS & CARDS ===================== */
 .section {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 
 .card-custom {
-    border-radius: 12px;
-    border: 1px solid rgba(176, 208, 211, 0.25);
-    overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid rgba(176, 208, 211, 0.25);
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.card-custom:hover {
+  transform: translateY(-4px);
 }
 
 .card-custom .card-body {
-    padding: 18px 16px;
+  padding: 18px 16px;
 }
 
 .price-tag {
-    color: #ff6f83;
-    font-weight: 700;
+  color: #ff6f83;
+  font-weight: 700;
 }
 
-/* ===================== NOTICE BOX ===================== */
-.notice-box {
-    background: #ffffff;
-    border: 1px solid #ffd6dd;
-    padding: 12px 18px;
-    margin-top: 16px;
-    display: inline-block;
-    border-radius: 14px;
-    font-size: 14px;
-    color: #c65f6f;
-    font-weight: 600;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+/* Button lihat */
+.lihat-btn {
+  color: inherit !important;
+  font-weight: 600;
+}
+
+.lihat-btn:hover {
+  color: #ff6f83 !important;
 }
 
 /* ===================== FOOTER ===================== */
 .footer {
-    background: #ffefef;
-    padding: 40px 0;
-    color: #3b3b3b;
-    border-radius: 24px 24px 0 0;
+  background: #ffefef;
+  padding: 40px 0;
+  color: #3b3b3b;
+  border-radius: 24px 24px 0 0;
 }
 
 .footer h5 {
-    font-weight: 700;
-    color: #3b3b3b;
+  font-weight: 700;
 }
 
+.footer-link {
+  color: inherit !important;
+  cursor: pointer;
+  padding: 4px 0;
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: #ff6f83 !important;
+}
+
+/* ===================== SOCIAL ICON ===================== */
 .social-circle {
-    width: 38px;
-    height: 38px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: #ffffff;
-    margin-right: 8px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-    text-decoration: none;
-    color: #333;
-    font-weight: 700;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #333;
+  border: 1px solid #ddd;
+  transition: 0.2s;
 }
 
-/* ===================== RESPONSIVE ===================== */
-@media (max-width: 767px) {
-    .hero-left h1 {
-        font-size: 30px;
-    }
-
-    .hero-img {
-        max-width: 260px;
-        margin-top: 20px;
-    }
+.social-circle:hover {
+  background: #f1f1f1;
+  transform: scale(1.15);
 }
 
+/* ===================== MODAL (Bootstrap) ===================== */
+.modal-dialog.modal-lg {
+  max-width: 900px;
+}
+
+.modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+/* ===================== MODAL (Custom) ===================== */
 .modal {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(0,0,0,0.6);
   display: none;
   justify-content: center;
@@ -163,15 +209,14 @@ body {
   max-width: 400px;
   background: #fff;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 14px;
   text-align: center;
   position: relative;
-  
 }
 
 .modal-img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-bottom: 15px;
 }
 
@@ -179,8 +224,8 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
-  cursor: pointer;
   font-size: 28px;
+  cursor: pointer;
 }
 
 .modal-wa-btn {
@@ -190,91 +235,17 @@ body {
   background: #25D366;
   color: #fff;
   border-radius: 8px;
-  text-decoration: none;
   font-weight: bold;
 }
 
-/* Lebarkan modal Bootstrap */
-.modal-dialog.modal-lg {
-    max-width: 900px !important;   /* dari 800px → 900px */
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 767px) {
+  .hero-left h1 {
+    font-size: 30px;
+  }
+
+  .hero-img {
+    max-width: 260px;
+    margin-top: 20px;
+  }
 }
-
-/* Jika ingin modal tidak terlalu tinggi */
-.modal-body {
-    max-height: 70vh;
-    overflow-y: auto;
-}
-
-.social-circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  color: #000;
-  text-decoration: none;
-  border: 1px solid #ddd;
-  transition: 0.2s;
-}
-
-.social-circle:hover {
-  background: #f1f1f1;
-  transform: scale(1.15);
-}
-
-.lihat-btn {
-  color: inherit !important;
-  text-decoration: none !important;
-}
-
-.lihat-btn:hover {
-  color: #f8d7ff !important;     /* warna hover lembut */
-  text-decoration: none !important;
-}
-
-
-.footer-link {
-  color: inherit !important;        /* atau ganti warna sesuai tema footer */
-  text-decoration: none !important;
-  cursor: pointer;
-  display: inline-block;
-  padding: 3px 0;
-}
-
-.footer-link:hover {
-  color: #f8d7ff !important;     /* warna hover lembut */
-  text-decoration: none !important;
-}
-
-.custom-navbar {
-  width: 100%;
-  padding: 16px 0;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-
-.brand-box {
-  display: flex;
-  align-items: center;
-  gap: 12px;                /* jarak antara gambar dan tulisan */
-}
-
-.brand-logo {
-  height: 62px;
-  display: block;
-}
-
-.brand-title {
-  font-size: 28px;
-  font-weight: 600;
-  text-transform: lowercase;
-}
-
-.hero {
-  text-align: center;
-}
-
